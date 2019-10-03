@@ -43,7 +43,7 @@ p {
 a {
   color: $white;
   text-decoration: none;
-  text-decoration-skip: ink;
+  text-decoration-skip-ink: auto
   transition: color $base-duration $base-timing;
 
   &:hover {
