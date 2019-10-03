@@ -11,6 +11,10 @@ $header-height: 64px;
     justify-content: space-between;
   }
 
+  &__title {
+    line-height: 0;
+  }
+
   &__menu {
     display: flex;
     justify-content: center;
