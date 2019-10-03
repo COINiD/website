@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $base-background-color;
+  margin: 0;
+
+  &.dark-theme {
+    background-color: $theme-dark-background-color;
+  }
+}
+
+// Media queries
+
+@mixin media($canvas) {
+  @if $canvas == small {
+    @media only screen and (min-width: $small) {
+      @content;
+    }
+  } @else if $canvas == medium {
+    @media only screen and (min-width: $medium) {
+      @content;
+    }
+  } @else if $canvas == large {
+    @media only screen and (min-width: $large) {
+      @content;
+    }
+  }
+}
+
+// Containers
+
+.wrapper {
+  @include media(medium) {
+    padding: 0 1%;
+  }
+
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 10px;
+}

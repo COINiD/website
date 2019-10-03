@@ -3,11 +3,11 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const IndexPage = () => (
+const VaultPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <div className="wrapper">Welcome to COINiD</div>
+    <SEO title="Vault" />
+    <div className="wrapper">Vault page</div>
   </Layout>
 )
 
-export default IndexPage
+export default VaultPage

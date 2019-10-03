@@ -1,0 +1,63 @@
+// Typography
+$base-font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+
+// Breakpoints
+$small: 480px;
+$medium: 768px;
+$large: 1000px;
+
+// Pixel text values
+$px-base-font-size: 20;
+$px-heading-font-size: 18;
+$px-base-line-height: 30;
+$px-heading-line-height: 24;
+
+// Convert to rem
+$base-font-size: ($px-base-font-size / 16) * 1rem;
+$base-line-height: ($px-base-line-height / $px-base-font-size);
+$heading-line-height: ($px-heading-line-height / $px-heading-font-size);
+
+// Font sizes
+$font-size-xxxs: (14 / 16) * 1rem;
+$font-size-xxs: (16 / 16) * 1rem;
+$font-size-xs: (18 / 16) * 1rem;
+$font-size-s: (20 / 16) * 1rem;
+$font-size-l: (24 / 16) * 1rem;
+$font-size-xl: (30 / 16) * 1rem;
+$font-size-xxl: (40 / 16) * 1rem;
+$font-size-cover: (90 / 16) * 1rem;
+$font-size-h1: (60 / 16) * 1rem;
+$font-size-h2: (50 / 16) * 1rem;
+$font-size-h3: (35 / 16) * 1rem;
+
+$font-size-cover-small: $font-size-xxl;
+$font-size-cover-medium: $font-size-h1;
+$font-size-h2-small: $font-size-xxl;
+
+// Calculate baseline
+$baseline: ($base-font-size * $base-line-height);
+
+// Vertical rhythm spacing
+$space-base: $baseline;
+$space-xxs: $space-base * 0.25;
+$space-xs: $space-base * 0.5;
+$space-s: $space-base * 0.75;
+$space-l: $space-base * 1.5;
+$space-xl: $space-base * 2;
+$space-xxl: $space-base * 3;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-border-radius-x2: $base-border-radius * 2;
+
+// Colors
+$medium-gray: #999;
+$light-gray: #f6f6f6;
+
+// Font Colors
+$base-font-color: #434f59;
+
+// Background Colors
+$base-background-color: #fff;
+$theme-dark-background-color: #212227;
+$header-background-color: rgba(15, 14, 18, 0.9);
