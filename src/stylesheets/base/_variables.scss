@@ -25,7 +25,6 @@ $font-size-s: (20 / 16) * 1rem;
 $font-size-l: (24 / 16) * 1rem;
 $font-size-xl: (30 / 16) * 1rem;
 $font-size-xxl: (40 / 16) * 1rem;
-$font-size-cover: (90 / 16) * 1rem;
 $font-size-h1: (60 / 16) * 1rem;
 $font-size-h2: (50 / 16) * 1rem;
 $font-size-h3: (35 / 16) * 1rem;
@@ -43,8 +42,8 @@ $space-xxs: $space-base * 0.25;
 $space-xs: $space-base * 0.5;
 $space-s: $space-base * 0.75;
 $space-l: $space-base * 1.5;
-$space-xl: $space-base * 2;
-$space-xxl: $space-base * 3;
+$space-xl: $space-base * 2.7;
+$space-xxl: $space-base * 4.2;
 
 // Other Sizes
 $base-border-radius: 3px;
@@ -62,6 +61,7 @@ $header-menu-color: $white;
 
 // Background Colors
 $base-background-color: $white;
+$theme-dark-background-color: #212227;
 $header-background-color: rgba(15, 14, 18, 0.9);
 
 // Focus

@@ -1,0 +1,20 @@
+.section {
+  padding: $space-xl 0;
+
+  &--dark {
+    background-color: $theme-dark-background-color;
+    color: $white;
+  }
+
+  &__content {
+    max-width: 90%;
+  }
+
+  &--splash {
+    .section__content {
+      p {
+        font-size: $font-size-xxl;
+      }
+    }
+  }
+}
