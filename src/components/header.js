@@ -16,13 +16,13 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <ul className="header__menu">
-        <li className="header__menu-item">
-          <Link to="/wallet" class="header__menu-link">
+        <li className="header__menu__item">
+          <Link to="/wallet" className="header__menu__link">
             Wallet
           </Link>
         </li>
-        <li className="header__menu-item">
-          <Link to="/vault" class="header__menu-link">
+        <li className="header__menu__item">
+          <Link to="/vault" className="header__menu__link">
             Vault
           </Link>
         </li>
