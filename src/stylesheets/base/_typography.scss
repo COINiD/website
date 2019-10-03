@@ -1,0 +1,30 @@
+html {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: 100%;
+  line-height: $base-line-height;
+}
+
+body {
+  font-size: $base-font-size;
+}
+
+p {
+  margin: 0 0 $space-base;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  text-decoration-skip: ink;
+  transition: color $base-duration $base-timing;
+
+  &:hover {
+    color: darken($white, 25%);
+  }
+
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+}

@@ -1,5 +1,5 @@
 // Typography
-$base-font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+$base-font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
 
 // Breakpoints
 $small: 480px;
@@ -51,13 +51,31 @@ $base-border-radius: 3px;
 $base-border-radius-x2: $base-border-radius * 2;
 
 // Colors
+$white: #fff;
 $medium-gray: #999;
 $light-gray: #f6f6f6;
+$dark-gray: #0e0d10;
 
 // Font Colors
-$base-font-color: #434f59;
+$base-font-color: $dark-gray;
+$header-menu-color: $white;
 
 // Background Colors
-$base-background-color: #fff;
-$theme-dark-background-color: #212227;
+$base-background-color: $white;
 $header-background-color: rgba(15, 14, 18, 0.9);
+
+// Focus
+$focus-outline-color: transparentize($white, 0.4);
+$focus-outline-width: 2px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Z-index
+$base-z-index: 0;
+$below-base-z-index: $base-z-index - 1;
+$above-base-z-index: 1;
+$global-nav-z-index: 999;
+
+// Animations
+$base-duration: 100ms;
+$base-timing: ease;

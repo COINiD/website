@@ -11,6 +11,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import Footer from './footer'
+
+import 'inter-ui'
 import '../stylesheets/master.scss'
 
 const Layout = ({ children }) => {

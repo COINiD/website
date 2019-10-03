@@ -17,10 +17,6 @@ body {
 body {
   background-color: $base-background-color;
   margin: 0;
-
-  &.dark-theme {
-    background-color: $theme-dark-background-color;
-  }
 }
 
 // Media queries
