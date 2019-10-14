@@ -11,13 +11,10 @@
   }
 
   &--splash {
-    padding-top: 250px;
-
     @include media(large) {
-      padding-top: 450px;
+      padding: 450px 0 235px;
     }
 
-    .section__content {
-    }
+    padding: 250px 0 66px;
   }
 }
