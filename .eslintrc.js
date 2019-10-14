@@ -1,21 +1,22 @@
 module.exports = {
-  parser: "babel-eslint",
+  parser: 'babel-eslint',
   rules: {
     strict: 0,
+    'react/prop-types': 0,
   },
   extends: [
-    "plugin:prettier/recommended",
-    "eslint:recommended",
-    "plugin:react/recommended",
+    'plugin:prettier/recommended',
+    'eslint:recommended',
+    'plugin:react/recommended',
   ],
   env: {
     browser: true,
   },
   overrides: [
     {
-      files: ["gatsby-*.js"],
+      files: ['gatsby-*.js'],
       parserOptions: {
-        sourceType: "script",
+        sourceType: 'script',
         ecmaVersion: 2015,
       },
       env: {
@@ -27,7 +28,7 @@ module.exports = {
   ],
   settings: {
     react: {
-      version: "16.10",
+      version: '16.10',
     },
   },
 }
