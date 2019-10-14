@@ -49,3 +49,21 @@
     }
   }
 }
+
+.u-display {
+  &--flex {
+    display: flex !important;
+  }
+}
+
+.u-justify-content {
+  &--center {
+    justify-content: center !important;
+  }
+}
+
+.u-align-items {
+  &--center {
+    align-items: center !important;
+  }
+}

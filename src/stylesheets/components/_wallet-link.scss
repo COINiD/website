@@ -1,0 +1,38 @@
+$size: 56px;
+
+.wallet-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 $space-s;
+
+  &__logo {
+    display: block;
+    border-radius: $base-border-radius-x2;
+    width: $size;
+    height: $size;
+    margin-bottom: $space-xs;
+  }
+
+  &__name {
+    font-size: $font-size-tiny;
+  }
+
+  &--bitcoin {
+    .wallet-link__logo {
+      background-color: $orange;
+    }
+  }
+
+  &--myriad {
+    .wallet-link__logo {
+      background-color: $pink;
+    }
+  }
+
+  &--groestlcoin {
+    .wallet-link__logo {
+      background-color: $turquoise;
+    }
+  }
+}

@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import SectionSplash from '../components/sections/splash'
+import BannerWallets from '../components/banners/wallets'
 
 const IndexPage = () => (
   <Layout>
@@ -17,6 +18,7 @@ const IndexPage = () => (
         </p>
       </div>
     </SectionSplash>
+    <BannerWallets />
   </Layout>
 )
 

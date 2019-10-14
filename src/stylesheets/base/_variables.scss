@@ -46,14 +46,20 @@ $space-xl: $space-base * 2.7;
 $space-xxl: $space-base * 10;
 
 // Other Sizes
-$base-border-radius: 3px;
+$base-border-radius: 7px;
 $base-border-radius-x2: $base-border-radius * 2;
 
 // Colors
 $white: #fff;
+$black: #000;
 $medium-gray: #999;
 $light-gray: #f6f6f6;
 $dark-gray: #0e0d10;
+
+// Wallet colors
+$orange: #ff7a00;
+$pink: #ec1076;
+$turquoise: #20c7ff;
 
 // Font Colors
 $base-font-color: $dark-gray;
