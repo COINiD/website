@@ -1,9 +1,11 @@
 import React from 'react'
 
+import { allInOneSolution as allInOneSolutionFlipConfig } from '../constants/flip-screens'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import SectionSplash from '../components/sections/splash'
+import SectionScreens from '../components/sections/screens'
 import BannerWallets from '../components/banners/wallets'
 
 const IndexPage = () => (
@@ -19,6 +21,12 @@ const IndexPage = () => (
       </div>
     </SectionSplash>
     <BannerWallets />
+    <SectionScreens
+      title="All-in-one solution."
+      subTitle="With COINiD, all your wallets are in one place.
+Two in one. And no more overpaying for less security."
+      flipConfig={allInOneSolutionFlipConfig}
+    />
   </Layout>
 )
 

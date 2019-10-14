@@ -1,0 +1,28 @@
+.screen-flip {
+  display: flex;
+  &__screens,
+  &__content {
+    width: 50%;
+  }
+
+  &__screen {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+    display: block;
+    transition: opacity 0.15s ease-in-out;
+    opacity: 0.4;
+    border-left: 2px solid $black;
+    padding: $space-s $space-base;
+
+    &--active {
+      opacity: 1;
+    }
+  }
+}

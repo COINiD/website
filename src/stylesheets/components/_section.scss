@@ -6,6 +6,16 @@
     color: $white;
   }
 
+  &--light {
+    a {
+      color: $black;
+
+      &:hover {
+        color: lighten($black, 25%);
+      }
+    }
+  }
+
   &__content {
     max-width: 90%;
   }
