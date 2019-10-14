@@ -11,10 +11,13 @@
   }
 
   &--splash {
+    padding-top: 250px;
+
+    @include media(large) {
+      padding-top: 450px;
+    }
+
     .section__content {
-      p {
-        font-size: $font-size-xxl;
-      }
     }
   }
 }

@@ -20,20 +20,27 @@ h6 {
   margin: 0 0 $space-xxs;
 }
 
+h1,
+h2 {
+  @include media(large) {
+    font-size: $font-size-desktop-xl;
+  }
+  font-size: $font-size-xl;
+}
+
 h1 {
-  font-size: $font-size-h1;
+  margin-bottom: $space-base;
 }
 
 h2 {
-  font-size: $font-size-h2-small;
-
-  @include media(medium) {
-    font-size: $font-size-h2;
-  }
+  margin-bottom: $space-l;
 }
 
 h3 {
-  font-size: $font-size-h3;
+  @include media(large) {
+    font-size: $font-size-desktop-large;
+  }
+  font-size: $font-size-large;
 }
 
 p {

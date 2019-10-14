@@ -11,7 +11,7 @@ const IndexPage = () => (
     <SectionSplash>
       <div className="section__content">
         <h1>Secure, fast & easy.</h1>
-        <p>
+        <p className="u-font-size--large">
           Lowering the bar of entry to offline crypto storage, all you need is a
           spare phone and 7 minutes. COINiD makes it easy!
         </p>

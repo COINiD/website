@@ -1,0 +1,51 @@
+.u-font-size {
+  &--xl {
+    font-size: $font-size-xl;
+  }
+
+  &--large {
+    font-size: $font-size-large;
+  }
+
+  &--medium {
+    font-size: $font-size-medium;
+  }
+
+  &--regular {
+    font-size: $font-size-regular;
+  }
+
+  &--small {
+    font-size: $font-size-small;
+  }
+
+  &--tiny {
+    font-size: $font-size-tiny;
+  }
+
+  @include media(large) {
+    &--xl {
+      font-size: $font-size-desktop-xl;
+    }
+
+    &--large {
+      font-size: $font-size-desktop-large;
+    }
+
+    &--medium {
+      font-size: $font-size-desktop-medium;
+    }
+
+    &--regular {
+      font-size: $font-size-desktop-regular;
+    }
+
+    &--small {
+      font-size: $font-size-desktop-small;
+    }
+
+    &--tiny {
+      font-size: $font-size-desktop-tiny;
+    }
+  }
+}

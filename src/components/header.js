@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
       >
         <img width="24px" height="24px" alt="COINiD Logo" src={logoRound} />
       </Link>
-      <ul className="header__menu">
+      <ul className="header__menu u-font-size--small">
         <li className="header__menu__item">
           <Link to="/wallet" className="header__menu__link">
             Wallet

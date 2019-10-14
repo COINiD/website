@@ -9,7 +9,7 @@ $large: 1000px;
 // Pixel text values
 $px-base-font-size: 20;
 $px-heading-font-size: 18;
-$px-base-line-height: 30;
+$px-base-line-height: 24;
 $px-heading-line-height: 24;
 
 // Convert to rem
@@ -18,20 +18,20 @@ $base-line-height: ($px-base-line-height / $px-base-font-size);
 $heading-line-height: ($px-heading-line-height / $px-heading-font-size);
 
 // Font sizes
-$font-size-xxxs: (14 / 16) * 1rem;
-$font-size-xxs: (16 / 16) * 1rem;
-$font-size-xs: (18 / 16) * 1rem;
-$font-size-s: (20 / 16) * 1rem;
-$font-size-l: (24 / 16) * 1rem;
-$font-size-xl: (30 / 16) * 1rem;
-$font-size-xxl: (40 / 16) * 1rem;
-$font-size-h1: (60 / 16) * 1rem;
-$font-size-h2: (50 / 16) * 1rem;
-$font-size-h3: (35 / 16) * 1rem;
+$font-size-tiny: (11 / 16) * 1rem;
+$font-size-small: (14 / 16) * 1rem;
+$font-size-regular: (16 / 16) * 1rem;
+$font-size-medium: (18 / 16) * 1rem;
+$font-size-large: (24 / 16) * 1rem;
+$font-size-xl: (32 / 16) * 1rem;
 
-$font-size-cover-small: $font-size-xxl;
-$font-size-cover-medium: $font-size-h1;
-$font-size-h2-small: $font-size-xxl;
+// Font sizes
+$font-size-desktop-tiny: $font-size-tiny;
+$font-size-desktop-small: $font-size-small;
+$font-size-desktop-regular: (20 / 16) * 1rem;
+$font-size-desktop-medium: (24 / 16) * 1rem;
+$font-size-desktop-large: (40 / 16) * 1rem;
+$font-size-desktop-xl: (60 / 16) * 1rem;
 
 // Calculate baseline
 $baseline: ($base-font-size * $base-line-height);
@@ -43,7 +43,7 @@ $space-xs: $space-base * 0.5;
 $space-s: $space-base * 0.75;
 $space-l: $space-base * 1.5;
 $space-xl: $space-base * 2.7;
-$space-xxl: $space-base * 4.2;
+$space-xxl: $space-base * 10;
 
 // Other Sizes
 $base-border-radius: 3px;
