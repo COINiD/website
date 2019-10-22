@@ -16,6 +16,11 @@
     }
   }
 
+  &--orange {
+    background-color: $theme-orange-background-color;
+    color: $black;
+  }
+
   &__content {
     max-width: 90%;
   }

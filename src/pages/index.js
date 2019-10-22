@@ -6,6 +6,7 @@ import SEO from '../components/seo'
 
 import SectionSplash from '../components/sections/splash'
 import SectionScreens from '../components/sections/screens'
+import SectionContentRight from '../components/sections/content-right'
 import BannerWallets from '../components/banners/wallets'
 
 const IndexPage = () => (
@@ -28,6 +29,18 @@ const IndexPage = () => (
       subTitle="With COINiD, all your wallets are in one place.
 Two in one. And no more overpaying for less security."
       flipConfig={allInOneSolutionFlipConfig}
+    />
+    <SectionContentRight
+      theme="orange"
+      title="Security at your fingertip."
+      body="When using a COINiD Wallet the private key will never leave your device.
+In cold wallet-mode it will never be exposed to an online environment.
+You are in control."
+      highlights={[
+        'Private key is stored as a 12 word mnemonic.',
+        'Hides the balance in idle mode and when opening receive dialog.',
+        'Ability to validate generated receive addresses to verify zero infiltration.',
+      ]}
     />
   </Layout>
 )
