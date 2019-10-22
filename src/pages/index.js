@@ -11,16 +11,18 @@ import BannerWallets from '../components/banners/wallets'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <SectionSplash>
-      <div className="section__content">
-        <h1>Secure, fast & easy.</h1>
-        <p className="u-font-size--large">
-          Lowering the bar of entry to offline crypto storage, all you need is a
-          spare phone and 7 minutes. COINiD makes it easy!
-        </p>
-      </div>
-    </SectionSplash>
-    <BannerWallets />
+    <div className="u-height--viewport u-display--flex u-flex-direction--column">
+      <SectionSplash>
+        <div className="section__content">
+          <h1 className="u-margin-top--xl">Secure, fast & easy.</h1>
+          <p className="u-font-size--large">
+            Lowering the bar of entry to offline crypto storage, all you need is
+            a spare phone and 7 minutes. COINiD makes it easy!
+          </p>
+        </div>
+      </SectionSplash>
+      <BannerWallets />
+    </div>
     <SectionScreens
       title="All-in-one solution."
       subTitle="With COINiD, all your wallets are in one place.

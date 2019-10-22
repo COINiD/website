@@ -48,7 +48,7 @@ class ScreenFlip extends PureComponent {
         className={classes}
         onClick={() => this.handleChangeScreen(id)}
       >
-        <strong>{title}</strong>
+        <strong className="u-font-weight--medium">{title}</strong>
         <br />
         {description}
       </a>

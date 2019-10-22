@@ -21,10 +21,16 @@
   }
 
   &--splash {
-    @include media(large) {
-      padding: 450px 0 235px;
-    }
+    padding: 0;
+    flex: 1;
+  }
 
-    padding: 250px 0 66px;
+  &--splash & {
+    &__content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+    }
   }
 }
