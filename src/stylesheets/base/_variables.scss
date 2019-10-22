@@ -33,6 +33,9 @@ $font-size-desktop-medium: (24 / 16) * 1rem;
 $font-size-desktop-large: (40 / 16) * 1rem;
 $font-size-desktop-xl: (60 / 16) * 1rem;
 
+// Font weights
+$font-weight-medium: 500;
+
 // Calculate baseline
 $baseline: ($base-font-size * $base-line-height);
 
@@ -55,6 +58,8 @@ $black: #000;
 $medium-gray: #999;
 $light-gray: #f6f6f6;
 $dark-gray: #0e0d10;
+$beige: #ffca7a;
+$orange-dark: #e74f0e;
 
 // Wallet colors
 $orange: #ff7a00;
@@ -69,6 +74,7 @@ $header-menu-color: $white;
 $base-background-color: $white;
 $theme-dark-background-color: #212227;
 $theme-orange-background-color: $orange;
+$theme-beige-background-color: $beige;
 $header-background-color: rgba(15, 14, 18, 0.9);
 
 // Focus

@@ -8,6 +8,7 @@ import SectionSplash from '../components/sections/splash'
 import SectionScreens from '../components/sections/screens'
 import SectionContentRight from '../components/sections/content-right'
 import BannerWallets from '../components/banners/wallets'
+import BannerQuote from '../components/banners/quote'
 
 const IndexPage = () => (
   <Layout>
@@ -41,6 +42,10 @@ You are in control."
         'Hides the balance in idle mode and when opening receive dialog.',
         'Ability to validate generated receive addresses to verify zero infiltration.',
       ]}
+    />
+    <BannerQuote
+      quote="I like the idea that anyone with a spare phone can set up a free cold storage vault for their bitcoin holdings!"
+      author="User 1"
     />
   </Layout>
 )

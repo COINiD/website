@@ -62,3 +62,12 @@ a {
     outline-offset: $focus-outline-offset;
   }
 }
+
+blockquote {
+  font-size: $font-size-large;
+  font-weight: $font-weight-medium;
+
+  @include media(large) {
+    font-size: $font-size-desktop-large;
+  }
+}

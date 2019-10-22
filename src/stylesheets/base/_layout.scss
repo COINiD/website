@@ -48,4 +48,9 @@ body {
   max-width: 940px;
   padding: 0 16px;
   height: 100%;
+
+  &--narrow {
+    padding-left: $space-xl;
+    padding-right: $space-xl;
+  }
 }
