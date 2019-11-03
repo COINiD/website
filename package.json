@@ -23,6 +23,8 @@
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
     "react-helmet": "^5.2.1",
+    "react-lottie": "git+https://github.com/felippenardi/lottie-react-web.git",
+    "react-lottie-web": "^1.3.2",
     "styled-components": "^4.4.0"
   },
   "devDependencies": {

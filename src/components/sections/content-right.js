@@ -3,14 +3,20 @@ import React, { PureComponent } from 'react'
 import SectionBase from './base'
 
 class SectionContentRight extends PureComponent {
-  renderHighlight = highlight => {
-    return <li className="section__highlight">{highlight}</li>
+  renderHighlight = (highlight, key) => {
+    return (
+      <li className="section__highlight" key={`highlight-${key}`}>
+        {highlight}
+      </li>
+    )
   }
 
   renderHighlights = highlights => {
     return (
       <ul className="section__highlights">
-        {highlights.map(highlight => this.renderHighlight(highlight))}
+        {highlights.map((highlight, key) =>
+          this.renderHighlight(highlight, key)
+        )}
       </ul>
     )
   }

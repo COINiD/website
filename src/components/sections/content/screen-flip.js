@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react'
 import classNames from 'classnames'
-
-import Image from '../../image'
+import PhoneControl from '../../graphics/phone-control'
 
 class ScreenFlip extends PureComponent {
   state = {
@@ -17,22 +16,6 @@ class ScreenFlip extends PureComponent {
 
   handleChangeScreen = id => {
     this.setState({ activeScreen: id })
-  }
-
-  renderScreen = ({ screen, id }) => {
-    let { activeScreen } = this.state
-
-    let classes = classNames('screen-flip__screen', {
-      [`screen-flip__screen--${id}`]: id,
-      [`screen-flip__screen--active`]: activeScreen === id,
-    })
-    return (
-      <Image
-        key={`image-${id}`}
-        filename={`screens/${screen}.png`}
-        className={classes}
-      />
-    )
   }
 
   renderContent = ({ title, description, id }) => {
@@ -57,10 +40,12 @@ class ScreenFlip extends PureComponent {
 
   render() {
     let { flipConfig } = this.props
+    let { activeScreen } = this.state
+
     return (
       <div className="screen-flip">
-        <div className="screen-flip__screens">
-          {flipConfig.map(config => this.renderScreen(config))}
+        <div className="screen-flip__phone">
+          <PhoneControl activeScreen={activeScreen} />
         </div>
         <div className="screen-flip__content">
           {flipConfig.map(config => this.renderContent(config))}

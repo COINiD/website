@@ -1,16 +1,15 @@
 .screen-flip {
-  display: flex;
-  &__screens,
+  position: relative;
+
   &__content {
     width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
-  &__screen {
-    display: none;
-
-    &--active {
-      display: block;
-    }
+  &__content {
+    padding-top: $space-xl;
   }
 
   &__link {
