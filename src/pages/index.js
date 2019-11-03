@@ -27,8 +27,7 @@ const IndexPage = () => (
     </div>
     <SectionScreens
       title="All-in-one solution."
-      subTitle="With COINiD, all your wallets are in one place.
-Two in one. And no more overpaying for less security."
+      subTitle="With COINiD, all your wallets are in one place.<br>Two in one. And no more overpaying for less security."
       flipConfig={allInOneSolutionFlipConfig}
     />
     <SectionContentRight

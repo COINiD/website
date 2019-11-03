@@ -1,7 +1,10 @@
 .phone-control {
   max-width: 591px;
   width: 100%;
-  margin-left: 25%;
+
+  > div {
+    width: 180% !important;
+  }
 
   @include media(medium) {
     margin-left: $space-l;

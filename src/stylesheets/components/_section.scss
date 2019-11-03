@@ -40,9 +40,11 @@
   }
 
   &--screens {
+    padding: $space-m 0;
     background-color: $theme-dust-background-color;
+
     @include media(medium) {
-      padding-bottom: 0;
+      padding: $space-xl 0 0;
     }
   }
 }
