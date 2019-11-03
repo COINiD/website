@@ -40,6 +40,7 @@
   }
 
   &--screens {
+    background-color: $theme-dust-background-color;
     @include media(medium) {
       padding-bottom: 0;
     }
