@@ -4,7 +4,6 @@
   margin-left: 25%;
 
   @include media(medium) {
-    padding-left: $space-l;
-    margin-left: 0;
+    margin-left: $space-l;
   }
 }
