@@ -38,4 +38,10 @@
       height: 100%;
     }
   }
+
+  &--screens {
+    @include media(medium) {
+      padding-bottom: 0;
+    }
+  }
 }

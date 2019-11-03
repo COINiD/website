@@ -26,8 +26,6 @@ class PhoneControl extends PureComponent {
       <div className="phone-control">
         <Lottie
           options={defaultOptions}
-          height={780}
-          width={591}
           speed={0.75}
           segments={segments}
           direction={direction}
