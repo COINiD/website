@@ -12,11 +12,14 @@ module.exports = {
   env: {
     browser: true,
   },
+  parserOptions: {
+    sourceType: 'module',
+  },
   overrides: [
     {
       files: ['gatsby-*.js'],
       parserOptions: {
-        sourceType: 'script',
+        sourceType: 'module',
         ecmaVersion: 2015,
       },
       env: {

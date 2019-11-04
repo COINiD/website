@@ -14,7 +14,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="u-height--viewport u-display--flex u-flex-direction--column">
-      <SectionSplash>
+      <SectionSplash backgroundImage="splashFront">
         <div className="section__content">
           <h1 className="u-margin-top--xl">Secure, fast & easy.</h1>
           <p className="u-font-size--large">
