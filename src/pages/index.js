@@ -7,6 +7,7 @@ import SEO from '../components/seo'
 import SectionSplash from '../components/sections/splash'
 import SectionScreens from '../components/sections/screens'
 import SectionContentRight from '../components/sections/content-right'
+import SectionCode from '../components/sections/code'
 import BannerWallets from '../components/banners/wallets'
 import BannerQuote from '../components/banners/quote'
 
@@ -41,6 +42,13 @@ You are in control."
         'Hides the balance in idle mode and when opening receive dialog.',
         'Ability to validate generated receive addresses to verify zero infiltration.',
       ]}
+    />
+    <SectionCode
+      title="Open-sourced"
+      subTitle="Responsiable<br>and with pride"
+      linkTitle="Github Respositories"
+      linkUrl="https://github.com/COINiD"
+      theme="dark"
     />
     <BannerQuote
       quote="I like the idea that anyone with a spare phone can set up a free cold storage vault for their bitcoin holdings!"

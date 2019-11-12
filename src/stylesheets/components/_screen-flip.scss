@@ -1,19 +1,27 @@
 .screen-flip {
-  position: relative;
+  display: flex;
 
-  @include media(medium) {
-    &__content {
-      width: 50%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding-top: $space-xl;
-    }
-
-    &__phone {
-      padding-top: $space-l;
-    }
+  &__content,
+  &__phone {
+    width: 50%;
   }
+
+  &__content {
+    padding-top: $space-l;
+  }
+  // @include media(medium) {
+  //   &__content {
+  //     width: 50%;
+  //     position: absolute;
+  //     top: 0;
+  //     right: 0;
+  //     padding-top: $space-xl;
+  //   }
+
+  //   &__phone {
+  //     padding-top: $space-l;
+  //   }
+  // }
 
   &__link {
     cursor: pointer;
