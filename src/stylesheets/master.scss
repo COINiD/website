@@ -5,10 +5,11 @@
 @import 'base/typography';
 @import 'base/utilities';
 
+@import 'components/banner';
 @import 'components/footer';
 @import 'components/header';
-@import 'components/section';
-@import 'components/banner';
-@import 'components/wallet-link';
-@import 'components/screen-flip';
+@import 'components/loader';
 @import 'components/phone-control';
+@import 'components/screen-flip';
+@import 'components/section';
+@import 'components/wallet-link';

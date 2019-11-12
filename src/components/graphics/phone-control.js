@@ -1,11 +1,18 @@
 import React, { PureComponent } from 'react'
 import Lottie from 'react-lottie-web'
+import classNames from 'classnames'
+import Loader from './loader'
 import * as phoneControlData from '../../animations/phone-control.json'
 import imgPhoneControl from '../../animations/screens/phone-control.png'
+import imgShadow from '../../animations/screens/shadow.png'
 import imgScreenHot from '../../animations/screens/hot.png'
 import imgScreenCold from '../../animations/screens/cold.png'
 
 class PhoneControl extends PureComponent {
+  state = {
+    loaded: false,
+  }
+
   render() {
     let { activeScreen } = this.props
 
@@ -33,6 +40,14 @@ class PhoneControl extends PureComponent {
       p: imgPhoneControl,
     })
 
+    phoneControlData.assets.push({
+      id: 'shadow',
+      w: 496,
+      h: 928,
+      u: '',
+      p: imgShadow,
+    })
+
     const defaultOptions = {
       loop: false,
       autoplay: true,
@@ -44,17 +59,30 @@ class PhoneControl extends PureComponent {
       hot: { segments: [29, 1], direction: -1 },
     }
 
-    console.log(`Screen: ${activeScreen}`, screenMap[activeScreen].segments)
     let { segments, direction } = screenMap[activeScreen]
 
+    let { loaded } = this.state
+    let controlClasses = classNames('phone-control', {
+      [`phone-control--loaded`]: loaded,
+    })
+
     return (
-      <div className="phone-control">
+      <div className={controlClasses}>
+        <span className="phone-control__loading">
+          <Loader />
+        </span>
         <Lottie
           options={defaultOptions}
           speed={0.75}
           segments={segments}
           direction={direction}
           forceSegments={true}
+          eventListeners={[
+            {
+              eventName: 'loaded_images',
+              callback: () => this.setState({ loaded: true }),
+            },
+          ]}
         />
       </div>
     )

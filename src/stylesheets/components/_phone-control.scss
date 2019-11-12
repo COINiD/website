@@ -1,3 +1,37 @@
 .phone-control {
+  position: relative;
   padding: 0 $space-m;
+
+  &__loading {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & > div {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+
+  &--loaded & {
+    &__loading {
+      opacity: 0;
+    }
+
+    & > div {
+      opacity: 1;
+    }
+  }
+
+  &--loaded {
+    & > div {
+      opacity: 1;
+    }
+  }
 }
